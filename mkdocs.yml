@@ -1,0 +1,122 @@
+site_name: Spry Assessment Developer Platform
+site_url: https://assessment.spryhealth.care/
+site_author: Sairaam Varadarajan
+site_description: SDKs and API documentation for Spry's Assessment Portal
+
+# Configuration
+theme:
+  name: material
+  
+  # Static files
+  static_templates:
+    - 404.html
+  
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  language: en
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: #783ED7
+      accent: #783ED7
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: #783ED7
+      accent: #783ED7
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: https://sprypt.com/assets/img/sprylogo.svg
+  logo: https://sprypt.com/assets/img/sprylogo.svg
+
+# Plugins
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: h2oai
+      repo: nitro
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: 
+    - index.md
+    - 'getting_started.md'
+  - Javascript SDK:
+    - 'js_sdk/index.md'
+    - 'js_sdk/install.md'
+    - 'js_sdk/configure.md'
+    - 'js_sdk/example.md'
+  - Spry iOS SDK:
+    - 'ios/index.md'
+  - Spry Android SDK:
+    - 'android/index.md'
+  - API:
+    - 'api/index.md'
+    - 'api/authentication.md'
+    - 'api/requests.md'
+
+extra:
+  generator: false

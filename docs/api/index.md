@@ -1,5 +1,6 @@
-Overview
-The Terra API is mainly organized around the webhook pattern. Automated messages arrive at your designated address, whenever an activity is generated.
+# Overview
+
+The Spry API is mainly organized around the webhook pattern. Automated messages arrive at your designated address, whenever an activity is generated.
 
 For activities in the past, or should you wish to fetch data manually, REST endpoints are also available.
 

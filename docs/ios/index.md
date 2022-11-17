@@ -5,11 +5,11 @@
 </p>
 
 
-This documentation describes how to integrate your iOS app with Spry Assessment SDK to build engaging computer vision assessment apps by using the Spry SDK for iOS. 
+This documentation describes how to integrate your iOS app with Spry RTM SDK to build engaging computer vision assessment apps by using the Spry SDK for iOS. 
 
 Code and samples for the Spry SDK for iOS will be available on GitHub.
 
-When you use the Spry SDK for iOS, follow the Spry Assessment Terms of Use and Privacy Policy.
+When you use the Spry SDK for iOS, follow the Spry RTM Terms of Use and Privacy Policy.
 
 
 # App Store Connect Requirements

@@ -8,4 +8,3 @@ Our API accepts JSON-encoded request bodies (where a body is required) or a stan
 
 See Integrations for a full list of API-based integrations. The Spry RTM API differs for every account as we release new versions and tailor functionality. Log in to see docs customized to your version of the API, with your test key and data.
 
-

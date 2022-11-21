@@ -1,2 +1,5 @@
 mkdocs-material
 mkdocs-video
+flask
+jinja2
+mkdocs-swagger-ui

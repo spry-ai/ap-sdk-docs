@@ -59,6 +59,7 @@ theme:
 plugins:
   - search
   - mkdocs-video
+  - swagger-ui-tag
 
 # Extensions
 markdown_extensions:
@@ -105,18 +106,16 @@ nav:
   - Home: 
     - index.md
     - 'getting_started.md'
-    - 'create_patient_program.md'
+    - 'patient_program.md'
     - 'patient_app.md'
-  - Javascript SDK:
+  - SDK:
     - 'js_sdk/index.md'
-    - 'js_sdk/install.md'
-    - 'js_sdk/configure.md'
-  - Spry iOS SDK:
-    - 'ios/index.md'
-    - 'ios/install.md'
-  - Spry Android SDK:
-    - 'android/index.md'
-    - 'android/install.md'
+    - iOS:
+      - 'ios/index.md'
+      - 'ios/install.md'
+    - Android:
+      - 'android/index.md'
+      - 'android/install.md'
   - API:
     - 'api/index.md'
     - 'api/authentication.md'
@@ -125,6 +124,8 @@ nav:
       - 'api/core/user.md'
       - 'api/core/session.md'
       - 'api/core/prescriber.md'
+    - 'api/swagger.md'
+
 
 extra:
   generator: false

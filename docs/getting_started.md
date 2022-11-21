@@ -2,8 +2,9 @@
 
 The following daigram shows the major components involved in the system.
 
-
-![](assets/Spry-ML-Interoperable-Major Blocks.png)
+<p align="center">
+<img src="/assets/Spry-ML-Interoperable-MajorBlocks.png" />
+</p>
 
 
 ## Spry Client SDK

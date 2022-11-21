@@ -1,8 +1,8 @@
 
+The below flow presents how the therapists will add a custom exercise program to the patient.
+
 ![](assets/Spry-ML-Interoperable-CreatePatientProgra.png)
 
-
-The above flow presents how the therapists will add a custom exercise program to the patient. 
 
 
 The following steps are involved in creating a customized exercise program 

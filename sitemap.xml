@@ -2,67 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://assessment.spryhealth.care/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/getting_started/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://assessment.spryhealth.care/prescription/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <loc>https://assessment.spryhealth.care/patient_app/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/patient_program/</loc>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/android/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/android/install/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/api/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://assessment.spryhealth.care/api/requests/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <loc>https://assessment.spryhealth.care/api/authentication/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/api/errors/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/api/swagger/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/api/core/prescriber/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/api/core/session/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://assessment.spryhealth.care/api/core/user/</loc>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/ios/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/ios/install/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/js_sdk/</loc>
-         <lastmod>2022-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://assessment.spryhealth.care/js_sdk/configure/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/js_sdk/examples/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://assessment.spryhealth.care/js_sdk/install/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

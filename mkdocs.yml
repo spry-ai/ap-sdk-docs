@@ -105,6 +105,8 @@ nav:
   - Home: 
     - index.md
     - 'getting_started.md'
+    - 'create_patient_program.md'
+    - 'patient_app.md'
   - Javascript SDK:
     - 'js_sdk/index.md'
     - 'js_sdk/install.md'

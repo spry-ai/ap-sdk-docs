@@ -1,11 +1,8 @@
 # Getting Started
 
-The following daigram shows the major components involved in the system.
+The following diagram shows the major components involved in the system.
 
-<p align="center">
-<img src="/assets/Spry-ML-Interoperable-MajorBlocks.png" />
-</p>
-
+[](assets/Spry-ML-Interoperable-MajorBlocks.png)
 
 ## Spry Client SDK
 
@@ -21,7 +18,7 @@ Spry Client SDK takes care of the
 Server SDK is used for 
 
  + Generating Authentication tokens for client SDK to use
- + Accesssing assessment reports of patients
+ + Accessing assessment reports of patients
 
 ## Spry Cloud
 
@@ -41,7 +38,7 @@ This documentation describes how to integrate your Spry RTM SDK to build engagin
 
  + Spry Prescription SDK for Javascript
  + Spry Mobile SDKs for RTM
- + SPry RTM APIs for report dashboarding and Adherence tracking
+ + Spry RTM APIs for report dashboards and Adherence tracking
 
 Code and samples for the Spry SDKs will be available on GitHub. When you use the Spry SDKs, follow the Spry RTM Terms of Use and Privacy Policy.
 

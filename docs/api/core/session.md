@@ -14,7 +14,7 @@ curl -X 'GET' \
 
 ```
 
-Here is the Sample response
+Here is the sample response
 
 ```json
 "https://assessment.spryhealth.care/report/35faf477"
@@ -31,7 +31,7 @@ curl -X 'GET' \
   -H 'accept: application/json'
   -u rtm_test_4eC39HqLyjWDarjtT1zdp7dc
 ```
-Here is the Sample response
+Here is the sample response
 
 ```json
 

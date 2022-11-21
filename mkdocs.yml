@@ -60,7 +60,9 @@ plugins:
   - search
   - mkdocs-video
   - swagger-ui-tag
-  - pandoc
+  - pandoc:
+      combined : True
+      combined_output_path: "pandoc/spry_rtm_doc.docx"
   
 # Extensions
 markdown_extensions:

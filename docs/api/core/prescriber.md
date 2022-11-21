@@ -2,7 +2,7 @@
 
 ### Post Prescription
 
-Post the details of a prescription as prescribed for the user. Supply the details of the assessment which the user might have have to be prescribed.
+Post the details of a prescription as prescribed for the user. Supply the details of the assessment which the user might have  to be prescribed.
 
 ```json
 curl -X 'POST' \

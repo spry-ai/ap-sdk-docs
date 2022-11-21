@@ -1,4 +1,4 @@
-# User
+# User APIs
 
 This is an object representing the user's artifacts. You can retrieve it to see the user's session, assessments and even adherence.
 

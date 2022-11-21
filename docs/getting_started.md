@@ -1,5 +1,39 @@
 # Getting Started
 
+The following daigram shows the major components involved in the system.
+
+
+![](assets/Spry-ML-Interoperable-Major Blocks.png)
+
+
+## Spry Client SDK
+
+Spry Client SDK takes care of the 
+
+ + Creating personalized assessment programs for patients
+ + Fetching patient details from Spry Interoperable Bridge(supports AthenaHealth) using CareQuality Framework
+ + Real-time patient monitoring for patients
+
+
+## Spry Server SDK 
+
+Server SDK is used for 
+
+ + Generating Authentication tokens for client SDK to use
+ + Accesssing assessment reports of patients
+
+## Spry Cloud
+
+Spry Cloud provides APIs for creating customized assessment programs and real-time patient monitoring using cutting-edge machine learning algorithms. 
+
+Spry Cloud uses its proprietary interoperable EHR bridge to fetch and send patient data with other EHRs. Currently supported EHRs include Athena, EPIC, and Cerner.  
+
+
+
+
+
+
+
 ![](assets/flow.png)
 
 This documentation describes how to integrate your Spry RTM SDK to build engaging computer vision assessment apps. 

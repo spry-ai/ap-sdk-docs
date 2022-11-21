@@ -356,92 +356,95 @@
 <article class="md-content__inner md-typeset">
 <h1 id="session-apis">Session APIs<a class="headerlink" href="#session-apis" title="Permanent link">¶</a></h1>
 <h3 id="session-id-report">Session ID Report<a class="headerlink" href="#session-id-report" title="Permanent link">¶</a></h3>
+<p>Retrieves the details of a session as taken by the user. Supply the unique identifier of the event, which you might have received in a webhook.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>curl -X 'GET' \
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>  'https://api.rtm.sprypt.com/v1/report/35faf477' \
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>  -H 'accept: application/json'
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>  -u rtm_test_4eC39HqLyjWDarjtT1zdp7dc
 </code></pre></div>
 <p>Here is the Sample response</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>"https://assessment.spryhealth.care/report/35faf477"
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="s2">"https://assessment.spryhealth.care/report/35faf477"</span><span class="w"></span>
 </code></pre></div>
 <h3 id="session-id-assessment">Session ID / Assessment<a class="headerlink" href="#session-id-assessment" title="Permanent link">¶</a></h3>
+<p>Retrieves the details of a assessment as taken by the user from each session. Supply the unique identifier of the event, which you might have received in a webhook.</p>
 <p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>curl -X 'GET' \
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  'https://api.rtm.sprypt.com/v1/100/Squats' \
 <a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>  -H 'accept: application/json'
 <a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>  -u rtm_test_4eC39HqLyjWDarjtT1zdp7dc
 </code></pre></div>
 Here is the Sample response</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>{
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>  "count": 1,
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>  "individual_reps_list": [
-<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>    {
-<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>      "rep_number": 1,
-<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a>      "start_frame_number": 0,
-<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a>      "peak_frame_number": 50,
-<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a>      "end_frame_number": 99,
-<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a>      "overall_accuracy_measurement": 98,
-<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a>      "measurement_results": [
-<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a>        {
-<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a>          "type": "peak",
-<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a>          "frame": 50,
-<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a>          "accuracy": 100,
-<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a>          "value": 66,
-<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a>          "measurement_id": 1,
-<a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a>          "message": "Hip flexion",
-<a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a>          "priority": 2
-<a href="#__codelineno-3-19" id="__codelineno-3-19" name="__codelineno-3-19"></a>        },
-<a href="#__codelineno-3-20" id="__codelineno-3-20" name="__codelineno-3-20"></a>        {
-<a href="#__codelineno-3-21" id="__codelineno-3-21" name="__codelineno-3-21"></a>          "type": "peak",
-<a href="#__codelineno-3-22" id="__codelineno-3-22" name="__codelineno-3-22"></a>          "frame": 50,
-<a href="#__codelineno-3-23" id="__codelineno-3-23" name="__codelineno-3-23"></a>          "accuracy": 100,
-<a href="#__codelineno-3-24" id="__codelineno-3-24" name="__codelineno-3-24"></a>          "value": 59,
-<a href="#__codelineno-3-25" id="__codelineno-3-25" name="__codelineno-3-25"></a>          "measurement_id": 2,
-<a href="#__codelineno-3-26" id="__codelineno-3-26" name="__codelineno-3-26"></a>          "message": "Knee flexion",
-<a href="#__codelineno-3-27" id="__codelineno-3-27" name="__codelineno-3-27"></a>          "priority": 1
-<a href="#__codelineno-3-28" id="__codelineno-3-28" name="__codelineno-3-28"></a>        },
-<a href="#__codelineno-3-29" id="__codelineno-3-29" name="__codelineno-3-29"></a>        {
-<a href="#__codelineno-3-30" id="__codelineno-3-30" name="__codelineno-3-30"></a>          "type": "peak",
-<a href="#__codelineno-3-31" id="__codelineno-3-31" name="__codelineno-3-31"></a>          "frame": 50,
-<a href="#__codelineno-3-32" id="__codelineno-3-32" name="__codelineno-3-32"></a>          "accuracy": 92,
-<a href="#__codelineno-3-33" id="__codelineno-3-33" name="__codelineno-3-33"></a>          "value": 5,
-<a href="#__codelineno-3-34" id="__codelineno-3-34" name="__codelineno-3-34"></a>          "measurement_id": 3,
-<a href="#__codelineno-3-35" id="__codelineno-3-35" name="__codelineno-3-35"></a>          "message": "Keep your knees aligned  with your toes",
-<a href="#__codelineno-3-36" id="__codelineno-3-36" name="__codelineno-3-36"></a>          "priority": 2
-<a href="#__codelineno-3-37" id="__codelineno-3-37" name="__codelineno-3-37"></a>        },
-<a href="#__codelineno-3-38" id="__codelineno-3-38" name="__codelineno-3-38"></a>        {
-<a href="#__codelineno-3-39" id="__codelineno-3-39" name="__codelineno-3-39"></a>          "type": "static",
-<a href="#__codelineno-3-40" id="__codelineno-3-40" name="__codelineno-3-40"></a>          "accuracy": 98,
-<a href="#__codelineno-3-41" id="__codelineno-3-41" name="__codelineno-3-41"></a>          "error": {
-<a href="#__codelineno-3-42" id="__codelineno-3-42" name="__codelineno-3-42"></a>            "frame": 81,
-<a href="#__codelineno-3-43" id="__codelineno-3-43" name="__codelineno-3-43"></a>            "accuracy": 69,
-<a href="#__codelineno-3-44" id="__codelineno-3-44" name="__codelineno-3-44"></a>            "message": "Do not lift your toes or heel"
-<a href="#__codelineno-3-45" id="__codelineno-3-45" name="__codelineno-3-45"></a>          },
-<a href="#__codelineno-3-46" id="__codelineno-3-46" name="__codelineno-3-46"></a>          "measurement_id": 4,
-<a href="#__codelineno-3-47" id="__codelineno-3-47" name="__codelineno-3-47"></a>          "message": "Do not lift your toes or heel",
-<a href="#__codelineno-3-48" id="__codelineno-3-48" name="__codelineno-3-48"></a>          "priority": 2
-<a href="#__codelineno-3-49" id="__codelineno-3-49" name="__codelineno-3-49"></a>        }
-<a href="#__codelineno-3-50" id="__codelineno-3-50" name="__codelineno-3-50"></a>      ]
-<a href="#__codelineno-3-51" id="__codelineno-3-51" name="__codelineno-3-51"></a>    }
-<a href="#__codelineno-3-52" id="__codelineno-3-52" name="__codelineno-3-52"></a>  ]
-<a href="#__codelineno-3-53" id="__codelineno-3-53" name="__codelineno-3-53"></a>}
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">  </span><span class="nt">"individual_reps_list"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">      </span><span class="nt">"rep_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">      </span><span class="nt">"start_frame_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">      </span><span class="nt">"peak_frame_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">      </span><span class="nt">"end_frame_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">99</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">      </span><span class="nt">"overall_accuracy_measurement"</span><span class="p">:</span><span class="w"> </span><span class="mi">98</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">      </span><span class="nt">"measurement_results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"peak"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">          </span><span class="nt">"frame"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">          </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">66</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">          </span><span class="nt">"measurement_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">          </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hip flexion"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">          </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<a href="#__codelineno-3-19" id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-3-20" id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-21" id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"peak"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-22" id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">          </span><span class="nt">"frame"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-23" id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="w">          </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-24" id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-25" id="__codelineno-3-25" name="__codelineno-3-25"></a><span class="w">          </span><span class="nt">"measurement_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-26" id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="w">          </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Knee flexion"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-27" id="__codelineno-3-27" name="__codelineno-3-27"></a><span class="w">          </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<a href="#__codelineno-3-28" id="__codelineno-3-28" name="__codelineno-3-28"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-3-29" id="__codelineno-3-29" name="__codelineno-3-29"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-30" id="__codelineno-3-30" name="__codelineno-3-30"></a><span class="w">          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"peak"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-31" id="__codelineno-3-31" name="__codelineno-3-31"></a><span class="w">          </span><span class="nt">"frame"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-32" id="__codelineno-3-32" name="__codelineno-3-32"></a><span class="w">          </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">92</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-33" id="__codelineno-3-33" name="__codelineno-3-33"></a><span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-34" id="__codelineno-3-34" name="__codelineno-3-34"></a><span class="w">          </span><span class="nt">"measurement_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-35" id="__codelineno-3-35" name="__codelineno-3-35"></a><span class="w">          </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Keep your knees aligned  with your toes"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-36" id="__codelineno-3-36" name="__codelineno-3-36"></a><span class="w">          </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<a href="#__codelineno-3-37" id="__codelineno-3-37" name="__codelineno-3-37"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-3-38" id="__codelineno-3-38" name="__codelineno-3-38"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-39" id="__codelineno-3-39" name="__codelineno-3-39"></a><span class="w">          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"static"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-40" id="__codelineno-3-40" name="__codelineno-3-40"></a><span class="w">          </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">98</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-41" id="__codelineno-3-41" name="__codelineno-3-41"></a><span class="w">          </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-3-42" id="__codelineno-3-42" name="__codelineno-3-42"></a><span class="w">            </span><span class="nt">"frame"</span><span class="p">:</span><span class="w"> </span><span class="mi">81</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-43" id="__codelineno-3-43" name="__codelineno-3-43"></a><span class="w">            </span><span class="nt">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">69</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-44" id="__codelineno-3-44" name="__codelineno-3-44"></a><span class="w">            </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Do not lift your toes or heel"</span><span class="w"></span>
+<a href="#__codelineno-3-45" id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">          </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-3-46" id="__codelineno-3-46" name="__codelineno-3-46"></a><span class="w">          </span><span class="nt">"measurement_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-47" id="__codelineno-3-47" name="__codelineno-3-47"></a><span class="w">          </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Do not lift your toes or heel"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-3-48" id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="w">          </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<a href="#__codelineno-3-49" id="__codelineno-3-49" name="__codelineno-3-49"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-3-50" id="__codelineno-3-50" name="__codelineno-3-50"></a><span class="w">      </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-3-51" id="__codelineno-3-51" name="__codelineno-3-51"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-3-52" id="__codelineno-3-52" name="__codelineno-3-52"></a><span class="w">  </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-3-53" id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h3 id="session-information">Session Information<a class="headerlink" href="#session-information" title="Permanent link">¶</a></h3>
+<p>Retrieves the meta data of a session as taken by the user. Supply the unique identifier of the event, which you might have received in a webhook.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>curl -X 'GET' \
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>  'https://api.rtm.sprypt.com/v1/100' \
 <a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>  -H 'accept: application/json'
 <a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>  -u rtm_test_4eC39HqLyjWDarjtT1zdp7dc
 </code></pre></div>
 <p>Here is the sample response</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>{
-<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>  "100": 100,
-<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>  "user_id": 36,
-<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>  "prescription_id": 9,
-<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a>  "assessments": [
-<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a>    "Squats",
-<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>    "L Cervical Extension",
-<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a>    "R Shoulder flexion"
-<a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a>  ]
-<a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a>}
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">"100"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">36</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">"prescription_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">"assessments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="s2">"Squats"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="s2">"L Cervical Extension"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span><span class="s2">"R Shoulder flexion"</span><span class="w"></span>
+<a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">  </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </article>
 </div>
